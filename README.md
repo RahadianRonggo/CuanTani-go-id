@@ -1,230 +1,223 @@
-# CuanTani 🌾
-**Platform Simulasi Trading & Manajemen Aset Agrikultur Berbasis Web**
+# 🛡️ Aman_Nyaman Ecosystem
+**Sistem Manajemen Brankas Digital & Analisis Keamanan Siber (Web & Mobile)**
 
-![Laravel](https://img.shields.io/badge/Laravel-10.x-red) ![Tailwind](https://img.shields.io/badge/Tailwind-3.0-blue) ![Status](https://img.shields.io/badge/Status-Development-yellow)
+![Laravel](https://img.shields.io/badge/Laravel-11.x-red) ![Kotlin](https://img.shields.io/badge/Kotlin-1.9-purple) ![MySQL](https://img.shields.io/badge/Database-MySQL-orange) ![Status](https://img.shields.io/badge/Status-Stable-green)
 
-**CuanTani** adalah platform simulasi investasi yang dirancang khusus untuk melatih kemampuan analisis pasar dan manajemen risiko bagi Taruna/Mahasiswa. Sistem ini mensimulasikan investasi di sektor riil (Peternakan, Pertanian, Perkebunan) serta trading komoditas tanpa risiko finansial nyata.
+![Banner Image](https://capsule-render.vercel.app/api?type=waving&color=00d4ff&height=200&section=header&text=Aman_Nyaman%20Ecosystem&fontSize=40&fontColor=000000&animation=fadeIn&fontAlignY=35)
+
+**Aman_Nyaman** adalah ekosistem keamanan digital komprehensif yang terdiri dari **Web Command Center** dan **Mobile Digital Vault**. Dirancang dengan antarmuka futuristik (*Cyberpunk Theme*), sistem ini berfungsi untuk menyimpan, memonitor, dan menganalisis aset rahasia (password, kredensial, dokumen) yang tersinkronisasi secara *real-time* di semua perangkat.
 
 ---
 
-# 📖 Deskripsi & Tujuan
+## 📖 Deskripsi & Tujuan
 
-Aplikasi ini menggabungkan konsep **Manajemen Portofolio** dan **Trading Cepat**. Pengguna dapat membeli saham ternak untuk jangka panjang, atau melakukan trading *Call/Put* pada grafik harga XAU/AGRI secara *real-time*.
+Ekosistem ini mengawinkan manajemen basis data yang aman di sisi server dengan aksesibilitas tingkat tinggi di sisi *mobile*. Pengguna dapat mengelola aset di Web dan memantaunya langsung dari HP mereka.
 
 **Tujuan Utama:**
-* Menyediakan platform simulasi investasi sektor ketahanan pangan.
-* Meningkatkan literasi finansial Taruna melalui gamifikasi pasar modal.
-* Memvisualisasikan pergerakan harga komoditas menggunakan *Interactive Candlestick Chart*.
-* Memudahkan monitoring ROI (*Return on Investment*) aset ternak dan tani.
+1. Menyediakan *Command Center* (Web) untuk manajemen dan audit aset secara mendalam.
+2. Menyediakan *Digital Vault* (Mobile) untuk monitoring aset secara portabel dan *real-time*.
+3. Mengotomatisasi analisis kekuatan keamanan (Algoritma Password & Malware/Phishing Scanner).
+4. Menyediakan API (Cobalt Protocol) yang aman untuk integrasi lintas platform.
 
-**Tech Stack:**
-* **Backend:** Laravel 10 (PHP 8.2)
-* **Frontend:** Blade Templates + Alpine.js
-* **Styling:** TailwindCSS 3.0
-* **Charting:** TradingView Lightweight Charts
+---
+
+## 🛠️ Tech Stack
+
+### 💻 Web Backend (Command Center)
+* **Framework:** Laravel 11 (PHP 8.2)
+* **Frontend:** Blade Templates + Custom Neon CSS
 * **Database:** MySQL 8.0
+* **API:** RESTful JSON Endpoint
+
+### 📱 Mobile (Digital Vault)
+* **Language:** Kotlin
+* **IDE:** Android Studio (API 34 Target)
+* **Networking:** Retrofit 2 + GSON Converter
+* **UI Components:** RecyclerView, CardView (Cyberpunk UI)
 
 ---
 
-# 📋 User Story
+## 📋 User Story
 
-| ID | User Story | Priority |
-| :--- | :--- | :--- |
-| **US-01** | Sebagai Investor, saya ingin melihat grafik harga pasar secara real-time untuk analisis tren. | **High** |
-| **US-02** | Sebagai Investor, saya ingin membeli aset kelolaan (Ternak/Tani) dan memantau ROI-nya. | **High** |
-| **US-03** | Sebagai Investor, saya ingin melihat detail aset (Lokasi, Manajer, Durasi Panen). | **High** |
-| **US-04** | Sebagai Investor, saya ingin melakukan eksekusi Trading Cepat (Call/Put) dengan timer 1 menit. | **Medium** |
-| **US-05** | Sebagai Admin, saya ingin mengelola data aset agar pasar tetap dinamis. | **Medium** |
-
----
-
-# 📝 SRS - Feature List
-
-### Functional Requirements
-| ID | Fitur | Deskripsi | Status |
-| :--- | :--- | :--- | :--- |
-| **FR-01** | **Dashboard 3 Sektor** | Monitoring terpisah untuk Saham Ternak, Tani, dan Kebun dalam satu layar. | ✅ Done |
-| **FR-02** | **Live Trading Chart** | Grafik Candlestick interaktif (XAU/AGRI) dengan update real-time. | ✅ Done |
-| **FR-03** | **Asset Detail** | Halaman rincian aset, estimasi ROI, dan profil manajer kebun. | ✅ Done |
-| **FR-04** | **Transaction System** | Mekanisme pembelian aset dengan validasi saldo otomatis. | ✅ Done |
-| **FR-05** | **Portfolio Wallet** | Ringkasan total kekayaan dan riwayat kepemilikan aset. | ✅ Done |
-| **FR-06** | **Auth System** | Login & Register khusus Member/Taruna. | ✅ Done |
-
-### Non-Functional Requirements
-* **Security:** Proteksi CSRF, Enkripsi Password (Bcrypt), Middleware Role.
-* **Performance:** Load halaman dashboard dioptimalkan dengan query efisien.
-* **Usability:** Desain responsif (Mobile/Desktop) dengan Tailwind Utility.
+| ID | User Story | Target | Priority |
+| :--- | :--- | :---: | :--- |
+| **US-01** | Sebagai Admin, saya ingin sistem mengaudit kekuatan password saya (Lemah/Kuat). | Web | **High** |
+| **US-02** | Sebagai Admin, saya ingin mendeteksi apakah sebuah URL berpotensi Phishing. | Web | **Medium** |
+| **US-03** | Sebagai User, saya ingin melihat seluruh aset saya di HP agar mudah dipantau. | Mobile | **High** |
+| **US-04** | Sebagai User, saya ingin data di HP otomatis sinkron dengan database server. | Mobile | **High** |
 
 ---
 
-# 📊 UML Diagrams
+## 📝 SRS - Feature List
 
-Berikut adalah visualisasi arsitektur sistem yang di-render otomatis oleh GitHub.
+### 🌐 Fitur Web (Laravel)
+* **Vault Management:** CRUD aset digital & kredensial.
+* **Security Auditor:** Analisis panjang karakter password dengan output warna.
+* **Phishing & Malware Scanner:** Tool analisis link HTTP/HTTPS dan simulasi scan file.
+* **Cobalt API Provider:** Penyedia endpoint `/api/vaults`.
 
-### 1. Use Case Diagram
-Interaksi antara Investor (Taruna) dan Sistem CuanTani.
+### 📱 Fitur Mobile (Android)
+* **Live Sync Dashboard:** Menarik data dari server via Retrofit.
+* **Visual Indicator:** Mewarnai status keamanan aset (Hijau/Kuning/Merah) secara dinamis.
+* **Responsive Layout:** Daftar aset yang tertata rapi menggunakan `RecyclerView`.
+
+---
+
+## 📊 System Architecture & UML
+
+Berikut adalah visualisasi arsitektur ekosistem **Aman_Nyaman**.
+
+### 1. Ekosistem Use Case (Web & Mobile)
+Interaksi pengguna di kedua platform.
 
 ```mermaid
 graph TD
-    User((Investor / Taruna))
-    System((CuanTani System))
+    Admin((Web Admin))
+    User((Mobile User))
+    API((Cobalt API / Laravel))
 
-    subgraph Fitur Utama
-        A[Login Authentication]
-        B[View Dashboard 3 Sektor]
-        C[Analisa Trading Chart]
-        D[Eksekusi Order CALL/PUT]
-        E[Beli Aset Kelolaan]
-        F[Cek Portofolio & Saldo]
+    subgraph Web Command Center
+        A[Kelola Vault Aset]
+        B[Audit Keamanan Password]
+        C[Phishing & Malware Scanner]
     end
 
-    User --> A
-    User --> B
-    User --> C
+    subgraph Mobile Vault App
+        D[Buka Dashboard Aset]
+        E[Cek Indikator Keamanan]
+    end
+
+    Admin --> A
+    Admin --> B
+    Admin --> C
+    A --> API
+    
     User --> D
     User --> E
-    User --> F
+    D -.->|Fetch Data| API
 ```
 
-### 2. Activity Diagram (Trading Flow)
-Alur aktivitas saat investor melakukan simulasi trading.
+### 2. Activity Diagram (Mobile Sync Flow)
+Alur aplikasi Android mengambil data dari Web.
 
 ```mermaid
 graph TD
-    Start((Start)) --> A[Buka Trading Arena];
-    A --> B[Analisa Grafik Candlestick];
-    B --> C{Tentukan Posisi};
-    C -- CALL / Naik --> D[Input Nominal Investasi];
-    C -- PUT / Turun --> D;
-    D --> E{Validasi Saldo Cukup?};
-    E -- No --> F[Tampilkan Error Saldo];
-    F --> D;
-    E -- Yes --> G[Kunci Saldo & Mulai Timer];
-    G --> H[Menunggu Durasi Berakhir];
-    H --> I{Hasil Prediksi Pasar?};
-    I -- Win --> J[Saldo Bertambah +Profit];
-    I -- Loss --> K[Saldo Berkurang -Investasi];
-    J --> L[Update Portofolio];
-    K --> L;
-    L --> End((End));
+    Start((Start App)) --> A[Init Retrofit Client];
+    A --> B[Kirim Request GET /api/vaults];
+    B --> C{Koneksi API Sukses?};
+    C -- No --> D[Tampilkan Error 'Timeout'];
+    D --> End((End));
+    C -- Yes --> E[Terima JSON Data];
+    E --> F[Parsing Data ke Kotlin Model];
+    F --> G[Evaluasi Level Keamanan];
+    G --> H{Level?};
+    H -- KUAT --> I[Teks Warna HIJAU];
+    H -- LEMAH --> J[Teks Warna MERAH];
+    I --> K[Render ke Layar RecyclerView];
+    J --> K;
+    K --> End;
 ```
 
-### 3. ERD (Entity Relationship Diagram)
-Struktur database dan relasi antar tabel.
+### 3. Entity Relationship Diagram (Database)
+Struktur tabel inti pada server MySQL.
 
 ```mermaid
 erDiagram
-    USERS ||--o{ TRANSAKSIS : "melakukan"
-    KEBUNS ||--o{ TRANSAKSIS : "ditransaksikan dalam"
+    VAULTS ||--o{ DOCUMENTS : "terkait dengan"
 
-    USERS {
+    VAULTS {
         bigint id PK
-        string name
-        string email
-        decimal saldo
-        enum role "admin/investor"
+        string perangkat
+        string username
+        string password
+        enum level "LEMAH/SEDANG/KUAT"
+        date expires_at
+        timestamp created_at
     }
 
-    KEBUNS {
+    DOCUMENTS {
         bigint id PK
-        string nama
-        enum kategori "Ternak/Pertanian/Perkebunan"
-        decimal harga
-        float roi
-        int durasi_panen
-    }
-
-    TRANSAKSIS {
-        bigint id PK
-        bigint user_id FK
-        bigint kebun_id FK
-        enum tipe "BUY/SELL"
-        decimal nominal
-        string status
+        string nama_dokumen
+        string file_path
         timestamp created_at
     }
 ```
 
 ---
 
-# 🎨 Mock-Up / Screenshots
+## 🔗 API Documentation (Cobalt Protocol)
 
-*(Tempat untuk screenshot aplikasi)*
+Endpoint untuk menghubungkan Web dan Mobile.
 
-| Dashboard Utama | Trading Arena | Detail Aset |
-| :---: | :---: | :---: |
-| ![Dashboard](https://via.placeholder.com/300x150?text=Dashboard+3+Kolom) | ![Trading](https://via.placeholder.com/300x150?text=Grafik+Candlestick) | ![Detail](https://via.placeholder.com/300x150?text=Detail+Aset) |
-
----
-
-# 🔄 SDLC (Metodologi Pengembangan)
-
-Proyek ini dikembangkan menggunakan metode **Waterfall**:
-
-1.  **Planning:** Analisis kebutuhan pasar agrikultur & fitur trading.
-2.  **Analysis:** Perancangan logika bisnis ROI & Fluktuasi Harga.
-3.  **Design:** Perancangan Database (ERD) & UI/UX (Blade).
-4.  **Development:** Coding Backend (Laravel) & Frontend (Tailwind).
-5.  **Testing:** Uji coba fitur transaksi & validasi saldo.
-6.  **Deployment:** Setup di lingkungan lokal.
-
----
-
-# 🚀 Instalasi (Localhost)
-
-Ikuti langkah ini untuk menjalankan proyek karena folder `vendor` tidak disertakan dalam repository.
-
-### 1. Clone Repository
-```bash
-git clone [https://github.com/RahadianRonggo/Med-Reminder.git](https://github.com/RahadianRonggo/Med-Reminder.git)
-cd Med-Reminder
+* **URL:** `/api/vaults`
+* **Method:** `GET`
+* **Response Success (200 OK):**
+```json
+{
+    "status": "SUCCESS",
+    "message": "COBALT_PROTOCOL_SYNC_COMPLETE",
+    "data": [
+        {
+            "id": 1,
+            "perangkat": "Server Induk",
+            "username": "admin_root",
+            "level": "KUAT",
+            "expires_at": "2026-12-31"
+        }
+    ]
+}
 ```
-*(Sesuaikan nama folder jika repository sudah di-rename menjadi CuanTani)*
 
-### 2. Install Dependencies (Wajib)
+---
+
+## 🚀 Instalasi & Setup (Localhost)
+
+Ikuti urutan ini agar komunikasi Client-Server berjalan lancar.
+
+### TAHAP 1: Menjalankan Server (Web Laravel)
+1. Clone repositori ini.
+2. Masuk ke folder Web:
 ```bash
+cd AmanNyamanWeb
 composer install
-npm install
-```
-
-### 3. Setup Environment
-```bash
 cp .env.example .env
 php artisan key:generate
+php artisan migrate
 ```
-*Buka file `.env` dan atur `DB_DATABASE=cuantani`.*
-
-### 4. Setup Database
+3. **PENTING:** Jalankan server dengan host `0.0.0.0` agar bisa diakses oleh HP/Emulator.
 ```bash
-php artisan migrate --seed
+php artisan serve --host=0.0.0.0 --port=8000
 ```
 
-### 5. Jalankan Aplikasi
-Buka dua terminal terpisah:
-```bash
-# Terminal 1
-npm run dev
+### TAHAP 2: Menjalankan Klien (Mobile Android)
+1. Buka folder Mobile (`AmanNyamanMobile`) menggunakan **Android Studio**.
+2. Buka file `app/src/main/java/.../MainActivity.kt`.
+3. Sesuaikan **IP Address** pada `BASE_URL`:
+```kotlin
+// Jika menggunakan Emulator Android Studio:
+private val BASE_URL = "[http://10.0.2.2:8000/](http://10.0.2.2:8000/)"
 
-# Terminal 2
-php artisan serve
+// Jika menggunakan HP Fisik (Cek IP Laptop via ipconfig):
+// private val BASE_URL = "[http://192.168.1.](http://192.168.1.)X:8000/"
 ```
-Akses via browser: `http://127.0.0.1:8000`
+4. Tunggu *Gradle Sync* selesai, lalu klik tombol **Run (▶)**.
 
 ---
 
-# 🔐 Default Account
+## 🎨 System Screenshots
 
-| Role | Email | Password |
-| :--- | :--- | :--- |
-| **Admin** | `admin@cuantani.com` | `password` |
-| **Investor** | `taruna@cuantani.com` | `password` |
+*(Ganti link di bawah dengan screenshot asli aplikasi Anda)*
+
+| Web: Dashboard | Web: Malware Lab | Mobile: Sync Dashboard |
+| :---: | :---: | :---: |
+| ![Web Dash](https://placehold.co/300x150/000000/00d4ff?text=Web+Vault) | ![Lab](https://placehold.co/300x150/000000/ff0000?text=Malware+Scanner) | ![Mobile Dash](https://placehold.co/200x400/000000/00ff00?text=Mobile+App) |
 
 ---
 
-# 👨‍💻 Author
+## 👨‍💻 Author
 
-**Rahadian Ronggo Kusumo**
-*Taruna Pratama - Politeknik Siber dan Sandi Negara*
-*Program Studi Rekayasa Keamanan Siber*
+**[NAMA LENGKAP KOMANDAN]**
+*Taruna/Mahasiswa - Politeknik [NAMA KAMPUS]*
+*Program Studi [NAMA PRODI]*
 
-> *"Membangun Ketahanan Pangan Melalui Teknologi Siber"* 🇮🇩🚜
+> *"Securing the Future, One Byte at a Time."* 🔐📱
